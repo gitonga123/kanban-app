@@ -23,3 +23,13 @@ function Circle(radius) {
 
 const circles = new Circle(1);
 (circles.draw());
+
+console.log(circles.constructor);
+console.log(circle.constructor);
+
+const keys = Object.keys(circle);
+console.log(keys);
+
+if ('radius' in circle) {
+	console.log("Circle has a radius.");
+}
